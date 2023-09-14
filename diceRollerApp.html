@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+</head>
+<body>
+    <div class="topDiceRollerName">Dice Roller</div>
+    <div class="diceRollerMainBox">
+        <button id="rollerBtn">Roll</button>
+        <div class="diceBox">
+            <div id="dice1"></div>
+            <div id="dice2"></div>
+            <div id="dice3"></div>
+        </div>        
+    </div>
+    <style>
+        html {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 140px 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .diceRollerMainBox {
+            width: 450px;
+            height: auto;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            box-shadow: 8px 8px 0 0;
+            border-radius: 5px;
+            padding: 40px 0 10px 0;
+        }
+        button {
+            padding: 10px 30px;
+            font-size: 25px;
+            border: 1px solid black;
+            background-color: white;
+            box-shadow: 6px 6px 0 0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #dice1, #dice2, #dice3 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+            border-radius: 4px;
+            box-shadow: 5px 5px 0 0 black;
+            cursor: default;
+        }
+        .diceBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            font-size: 30px;
+        }
+        .topDiceRollerName {
+            font-size: 60px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        let x;
+        let y;
+        let z;
+
+        document.getElementById("rollerBtn").onclick = function() {
+            x = Math.floor(Math.random() * 6) + 1;
+            y = Math.floor(Math.random() * 6) + 1;
+            z = Math.floor(Math.random() * 6) + 1;
+
+            document.getElementById("dice1").innerHTML = x;
+            document.getElementById("dice2").innerHTML = y;
+            document.getElementById("dice3").innerHTML = z;
+        }
+
+
+    </script>
+</body>
+</html>

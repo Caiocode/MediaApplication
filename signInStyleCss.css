@@ -3,26 +3,28 @@ html {
     display: grid;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
+    zoom: 1.1;
 }
 
+
+.mainBoxTopText {
+    font-size: 20px;
+    padding: 0px 0 0px 0;
+    text-align: center;
+}
 .signInMainBox {
     background-color: white;
     width: 400px;
     height: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 10px 20px;
     border: 1px solid rgb(59, 59, 59);
     display: grid;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 7px 7px 0px 0px;
-    transition: 0.5s;
-}
-.signInMainBox:hover {
-    box-shadow: 15px 15px 0px 5px;
-    margin-left: -20px;
-    transition: 0.5s;
+    box-shadow: 4px 4px 0px 0px;
 }
 input {
     width: 300px;
@@ -32,24 +34,57 @@ input {
     margin-top: 20px;
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 7px 7px 0px 0px;
+    box-shadow: 3px 3px 0px 0px;
 }
 button {
     margin-top: 20px;
     width: 100px;
     height: 30px;
-    background-color: rgb(7, 142, 245);
+    background-color: rgb(39, 114, 255);
     text-align: center;
     border: none;
     color: black;
     border-radius: 4px;
-    box-shadow: 5px 5px 0px 0px;
+    box-shadow: 3px 3px 0px 0px;
+}
+#signInBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
 }
 .linkSignUp {
-    text-align: left;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.aSignUpLink {
+    color: rgb(39, 114, 255);
 }
 a {
     text-decoration: none;
-    color: rgb(7, 142, 245);
+    color: rgb(0, 0, 0);
+}
+.appLinks {
+    display: flex;
+}
+.counterLink {
+    margin-top: 30px;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 0px 0px black;
+    border-radius: 3px;
+    margin-right: 40px;
+}
+.diceRollerLink {
+    margin-top: 30px;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 0px 0px black;
+    border-radius: 3px;
 }
